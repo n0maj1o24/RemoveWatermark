@@ -1,5 +1,5 @@
 #!/usr/bin env python
-# __author__ = 'geek.clumsy'
+# __author__ = 'ShadonSniper'
 import os
 import sys
 import binascii
