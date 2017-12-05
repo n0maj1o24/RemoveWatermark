@@ -24,8 +24,8 @@ def remove_watermark(path):
         try:
             with open(path,"rb") as f:
                 pdf_bin_data = f.read()
-                pdf_bin_data = pdf_bin_data.replace(binascii.unhexlify(hex_link_pat),"")
-                pdf_bin_data = pdf_bin_data.replace(binascii.unhexlify(hex_text_pat),"")
+                pdf_bin_data = pdf_bin_data.replace(binascii.unhexlify(hex_link_pat),b"")
+                pdf_bin_data = pdf_bin_data.replace(binascii.unhexlify(hex_text_pat),b"")
         except IOError:
             sys.stderr.write("Error in opening file")
     else:
